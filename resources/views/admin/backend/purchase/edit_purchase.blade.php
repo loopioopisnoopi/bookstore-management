@@ -5,8 +5,8 @@
       <div class="d-flex flex-column-fluid">
          <div class="container-fluid my-4">
             <div class="d-md-flex align-items-center justify-content-between">
-                  <h3 class="mb-0">Chỉnh sửa phiếu nhập</h3>
-                  <div class="text-end my-2 mt-md-0"><a class="btn btn-outline-primary"
+               <h3 class="mb-0">Chỉnh sửa phiếu nhập</h3>
+               <div class="text-end my-2 mt-md-0"><a class="btn btn-outline-primary"
                      href="{{ route('all.purchase') }}">Quay lại</a></div>
             </div>
 
@@ -34,7 +34,7 @@
 
                                  <div class="col-md-4 mb-3">
                                     <div class="form-group w-100">
-                                          <label class="form-label" for="formBasic">Kho: <span
+                                       <label class="form-label" for="formBasic">Kho: <span
                                              class="text-danger">*</span></label>
                                        <select name="warehouse_id" id="warehouse_id" class="form-control form-select"
                                           disabled>
@@ -50,7 +50,7 @@
 
                                  <div class="col-md-4 mb-3">
                                     <div class="form-group w-100">
-                                          <label class="form-label" for="formBasic">Nhà cung cấp: <span
+                                       <label class="form-label" for="formBasic">Nhà cung cấp: <span
                                              class="text-danger">*</span></label>
                                        <select name="supplier_id" id="supplier_id" class="form-control form-select">
                                           <option value="">Chọn nhà cung cấp</option>
@@ -82,7 +82,8 @@
 
                               <div class="row">
                                  <div class="col-md-12">
-                                    <label class="form-label">Danh sách sách nhập: <span class="text-danger">*</span></label>
+                                    <label class="form-label">Danh sách sách nhập: <span
+                                          class="text-danger">*</span></label>
                                     <table class="table table-striped table-bordered dataTable" style="width: 100%;">
                                        <thead>
                                           <tr role="row">
@@ -180,7 +181,8 @@
                                                    <tr>
                                                       <td class="py-3 text-primary">Tổng tiền</td>
                                                       <td class="py-3 text-primary" id="grandTotal">TK
-                                                         {{ $editData->grand_total }}</td>
+                                                         {{ $editData->grand_total }}
+                                                      </td>
                                                       <input type="hidden" name="grand_total"
                                                          value="{{ $editData->grand_total }}">
                                                    </tr>
@@ -229,7 +231,7 @@
                                  </div>
                                  <div class="col-md-4">
                                     <div class="form-group w-100">
-                                          <label class="form-label" for="formBasic">Trạng thái: <span
+                                       <label class="form-label" for="formBasic">Trạng thái: <span
                                              class="text-danger">*</span></label>
                                        <select name="status" id="status" class="form-control form-select">
                                           <option value="">Chọn trạng thái</option>

@@ -5,8 +5,8 @@
         <div class="d-flex flex-column-fluid">
             <div class="container-fluid my-4">
                 <div class="d-md-flex align-items-center justify-content-between">
-                        <h3 class="mb-0"> Chi tiết phiếu nhập</h3>
-                        <div class="text-end my-2 mt-md-0"><a class="btn btn-outline-primary"
+                    <h3 class="mb-0"> Chi tiết phiếu nhập</h3>
+                    <div class="text-end my-2 mt-md-0"><a class="btn btn-outline-primary"
                             href="{{ route('all.purchase') }}">Quay lại</a></div>
                 </div>
 
