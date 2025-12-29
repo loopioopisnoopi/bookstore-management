@@ -57,15 +57,15 @@
             <table id="example" class="table table-striped table-bordered dataTable" style="width: 100%;" role="grid" aria-describedby="example_info">
                 <thead>
                     <tr role="row">
-                        <th>ID</th>
-                        <th>Date</th>
-                        <th>Supplier</th>
-                        <th>Warehouse</th>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Unti Price</th>
-                        <th>Status</th>
-                        <th>Grand Total</th> 
+                        <th>Mã</th>
+                        <th>Ngày</th>
+                        <th>Nhà cung cấp</th>
+                        <th>Kho</th>
+                        <th>Sách</th>
+                        <th>Số lượng</th>
+                        <th>Giá nhập</th>
+                        <th>Trạng thái</th>
+                        <th>Tổng tiền</th> 
                     </tr>
                 </thead>
             <tbody>

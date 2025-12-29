@@ -9,13 +9,13 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">Add Roles</h4>
+                <h4 class="fs-18 fw-semibold m-0">Thêm vai trò</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
                     
-                    <li class="breadcrumb-item active">Add Roles</li>
+                    <li class="breadcrumb-item active">Thêm vai trò</li>
                 </ol>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title mb-0">Add Roles</h5>
+                        <h5 class="card-title mb-0">Thêm vai trò</h5>
                     </div><!-- end card header -->
 
 <div class="card-body">
@@ -33,7 +33,7 @@
         @csrf
 
         <div class="col-md-6">
-            <label for="validationDefault01" class="form-label">Roles Name</label>
+            <label for="validationDefault01" class="form-label">Tên vai trò</label>
             <input type="text" class="form-control" name="name"  > 
         </div>
  

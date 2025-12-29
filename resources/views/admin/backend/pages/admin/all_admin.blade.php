@@ -8,12 +8,12 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">All Admin</h4>
+                <h4 class="fs-18 fw-semibold m-0">Tất cả quản trị viên</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
-                     <a href="{{ route('add.admin') }}" class="btn btn-secondary">Add Admin</a>
+                     <a href="{{ route('add.admin') }}" class="btn btn-secondary">Thêm quản trị viên</a>
                 </ol>
             </div>
         </div>
@@ -31,11 +31,11 @@
     <table id="datatable" class="table table-bordered dt-responsive table-responsive nowrap">
         <thead>
         <tr>
-            <th>Sl</th>
-            <th>Name</th>
+            <th>STT</th>
+            <th>Tên</th>
             <th>Email</th> 
-            <th>Role</th> 
-            <th>Action</th>
+            <th>Vai trò</th> 
+            <th>Thao tác</th>
         </tr>
         </thead>
         <tbody>
@@ -50,8 +50,8 @@
                 @endforeach
                 </td>
                 <td>
-            <a href="{{ route('edit.admin',$item->id) }}" class="btn btn-success btn-sm">Edit</a>  
-            <a href="{{ route('delete.admin',$item->id) }}" class="btn btn-danger btn-sm" id="delete">Delete</a>    
+            <a href="{{ route('edit.admin',$item->id) }}" class="btn btn-success btn-sm">Sửa</a>  
+            <a href="{{ route('delete.admin',$item->id) }}" class="btn btn-danger btn-sm" id="delete">Xóa</a>    
                 </td> 
             </tr>
             @endforeach 

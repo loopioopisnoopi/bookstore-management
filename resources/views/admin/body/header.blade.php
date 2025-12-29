@@ -9,7 +9,7 @@
                 </li>
                 <li class="d-none d-lg-block">
                     <div class="position-relative topbar-search">
-                        <input type="text" class="form-control bg-light bg-opacity-75 border-light ps-4" placeholder="Search...">
+                        <input type="text" class="form-control bg-light bg-opacity-75 border-light ps-4" placeholder="Tìm kiếm...">
                         <i class="mdi mdi-magnify fs-16 position-absolute text-muted top-50 translate-middle-y ms-2"></i>
                     </div>
                 </li>
@@ -35,9 +35,9 @@
                 <h5 class="m-0">
                     <span class="float-end">
                         <a href="" class="text-dark">
-                            <small>Clear All</small>
+                            <small>Xóa tất cả</small>
                         </a>
-                    </span>Notification
+                    </span>Thông báo
                 </h5>
             </div>
 
@@ -62,7 +62,7 @@
 
                         <!-- All-->
                         <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
-                            View all
+                            Xem tất cả
                             <i class="fe-arrow-right"></i>
                         </a>
 
@@ -84,19 +84,19 @@
                     <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
                         <!-- item-->
                         <div class="dropdown-header noti-title">
-                            <h6 class="text-overflow m-0">Welcome !</h6>
+                            <h6 class="text-overflow m-0">Chào mừng !</h6>
                         </div>
 
                         <!-- item-->
                         <a href="{{ route('admin.profile') }}" class="dropdown-item notify-item">
                             <i class="mdi mdi-account-circle-outline fs-16 align-middle"></i>
-                            <span>My Account</span>
+                            <span>Tài khoản của tôi</span>
                         </a>
 
                         <!-- item-->
                         <a href="auth-lock-screen.html" class="dropdown-item notify-item">
                             <i class="mdi mdi-lock-outline fs-16 align-middle"></i>
-                            <span>Lock Screen</span>
+                            <span>Khóa màn hình</span>
                         </a>
 
                         <div class="dropdown-divider"></div>
@@ -104,7 +104,7 @@
                         <!-- item-->
                         <a href="{{ route('admin.logout') }}" class="dropdown-item notify-item">
                             <i class="mdi mdi-location-exit fs-16 align-middle"></i>
-                            <span>Logout</span>
+                            <span>Đăng xuất</span>
                         </a>
 
                     </div>

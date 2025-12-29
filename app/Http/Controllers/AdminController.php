@@ -101,6 +101,10 @@ class AdminController extends Controller
      }
      // End Method
 
-    
+     public function Dashboard(){
+        return view('admin.index');
+     }
+     // End Method
 
 }
+

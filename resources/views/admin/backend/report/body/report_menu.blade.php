@@ -1,9 +1,9 @@
 <ul class="navbar-nav">
         <li class="nav-item">
-            <a href="{{ route('all.report') }}" class="nav-link active" aria-current="page">Purchase</a> 
+            <a href="{{ route('all.report') }}" class="nav-link active" aria-current="page">Phiếu nhập</a> 
         </li>
         <li class="nav-item">
-            <a href="{{ route('purchase.return.report') }}" class="nav-link purchase-return-tab" >Purchase Return</a> 
+            <a href="{{ route('purchase.return.report') }}" class="nav-link purchase-return-tab" >Phiếu nhập trả</a> 
         </li>
 
         <li class="nav-item">

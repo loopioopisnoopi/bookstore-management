@@ -9,13 +9,13 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">Edit Permission</h4>
+                <h4 class="fs-18 fw-semibold m-0">Sửa quyền</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
                     
-                    <li class="breadcrumb-item active">Edit Permission</li>
+                    <li class="breadcrumb-item active">Sửa quyền</li>
                 </ol>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title mb-0">Edit Permission</h5>
+                        <h5 class="card-title mb-0">Sửa quyền</h5>
                     </div><!-- end card header -->
 
 <div class="card-body">
@@ -34,14 +34,14 @@
         <input type="hidden" name="id" value="{{ $permissions->id }}">
 
         <div class="col-md-6">
-            <label for="validationDefault01" class="form-label">Permission Name</label>
+            <label for="validationDefault01" class="form-label">Tên quyền</label>
             <input type="text" class="form-control" name="name" value="{{ $permissions->name }}"  > 
         </div>
 
         <div class="col-md-6">
-            <label for="validationDefault01" class="form-label">Permission Group</label>
+            <label for="validationDefault01" class="form-label">Nhóm quyền</label>
             <select name="group_name" class="form-select" id="example-select">
-                <option value="" selected>Select Group</option>
+                <option value="" selected>Chọn nhóm</option>
                 <option value="Brand" {{ $permissions->group_name == 'Brand' ? 'selected' : '' }}>Brand</option>
                 <option value="WareHouse" {{ $permissions->group_name == 'WareHouse' ? 'selected' : '' }}>WareHouse</option>
                 <option value="Supplier" {{ $permissions->group_name == 'Supplier' ? 'selected' : '' }}>Supplier</option>

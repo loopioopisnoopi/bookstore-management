@@ -9,13 +9,13 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">Add Permission</h4>
+                <h4 class="fs-18 fw-semibold m-0">Thêm quyền</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
                     
-                    <li class="breadcrumb-item active">Add Permission</li>
+                    <li class="breadcrumb-item active">Thêm quyền</li>
                 </ol>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title mb-0">Add Permission</h5>
+                        <h5 class="card-title mb-0">Thêm quyền</h5>
                     </div><!-- end card header -->
 
 <div class="card-body">
@@ -33,14 +33,14 @@
         @csrf
 
         <div class="col-md-6">
-            <label for="validationDefault01" class="form-label">Permission Name</label>
+            <label for="validationDefault01" class="form-label">Tên quyền</label>
             <input type="text" class="form-control" name="name"  > 
         </div>
 
         <div class="col-md-6">
-            <label for="validationDefault01" class="form-label">Permission Group</label>
+            <label for="validationDefault01" class="form-label">Nhóm quyền</label>
             <select name="group_name" class="form-select" id="example-select">
-                <option value="" selected>Select Group</option>
+                <option value="" selected>Chọn nhóm</option>
                 <option value="Brand">Brand</option>
                 <option value="WareHouse">WareHouse</option>
                 <option value="Supplier">Supplier</option>
@@ -56,7 +56,7 @@
         </div> 
             
         <div class="col-12">
-            <button class="btn btn-primary" type="submit">Save Change</button>
+            <button class="btn btn-primary" type="submit">Lưu</button>
         </div>
     </form>
 </div> <!-- end card-body -->

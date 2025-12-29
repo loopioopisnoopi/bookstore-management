@@ -8,12 +8,12 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">All Permission</h4>
+                <h4 class="fs-18 fw-semibold m-0">Danh sách quyền</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
-                     <a href="{{ route('add.permission') }}" class="btn btn-secondary">Add Permission</a>
+                     <a href="{{ route('add.permission') }}" class="btn btn-secondary">Thêm quyền</a>
                 </ol>
             </div>
         </div>
@@ -31,10 +31,10 @@
     <table id="datatable" class="table table-bordered dt-responsive table-responsive nowrap">
         <thead>
         <tr>
-            <th>Sl</th>
-            <th>Permission Name</th>
-            <th>Permission Group</th>  
-            <th>Action</th>
+            <th>STT</th>
+            <th>Tên quyền</th>
+            <th>Nhóm quyền</th>  
+            <th>Thao tác</th>
         </tr>
         </thead>
         <tbody>
@@ -44,8 +44,8 @@
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->group_name }}</td> 
                 <td>
-            <a href="{{ route('edit.permission',$item->id) }}" class="btn btn-success btn-sm">Edit</a>  
-            <a href="{{ route('delete.permission',$item->id) }}" class="btn btn-danger btn-sm" id="delete">Delete</a>    
+            <a href="{{ route('edit.permission',$item->id) }}" class="btn btn-success btn-sm">Sửa</a>  
+            <a href="{{ route('delete.permission',$item->id) }}" class="btn btn-danger btn-sm" id="delete">Xóa</a>    
                 </td> 
             </tr>
             @endforeach 

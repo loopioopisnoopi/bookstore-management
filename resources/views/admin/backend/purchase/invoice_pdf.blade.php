@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Purchase Invoice</title>
+    <title>Hóa đơn phiếu nhập</title>
     <style>
         * {
             margin: 0;
@@ -138,40 +138,40 @@
 <body>
     <div class="invoice-container">
         <div class="invoice-header">
-            <h5>Purchase Invoice</h5>
+            <h5>Hóa đơn phiếu nhập</h5>
         </div>
 
         <table class="info-section">
             <tr>
                 <td class="info-box">
-                    <h5>Supplier Info</h5>
-                    <p><strong>Name:</strong> {{ $purchase->supplier->name }} </p>
+                    <h5>Thông tin nhà cung cấp</h5>
+                    <p><strong>Tên:</strong> {{ $purchase->supplier->name }} </p>
                     <p><strong>Email:</strong> {{ $purchase->supplier->email }}</p>
-                    <p><strong>Phone:</strong> {{ $purchase->supplier->phone }} </p>
+                    <p><strong>Số điện thoại:</strong> {{ $purchase->supplier->phone }} </p>
                 </td>
                 <td class="info-box">
-                    <h5>Warehouse</h5>
+                    <h5>Kho</h5>
                     <p>{{ $purchase->warehouse->name }} </p>
                 </td>
                 <td class="info-box">
-                    <h5>Purchase Info</h5>
-                    <p><strong>Date:</strong> {{ $purchase->date }} </p>
-                    <p><strong>Status:</strong> {{ $purchase->status }} </p>
-                    <p><strong>Grand Total:</strong> ${{ number_format($purchase->grand_total, 2)  }} </p>
+                    <h5>Thông tin phiếu nhập</h5>
+                    <p><strong>Ngày:</strong> {{ $purchase->date }} </p>
+                    <p><strong>Trạng thái:</strong> {{ $purchase->status }} </p>
+                    <p><strong>Tổng tiền:</strong> ${{ number_format($purchase->grand_total, 2)  }} </p>
                 </td>
             </tr>
         </table>
 
-        <h5 style="font-weight: bold; margin: 20px 0 10px;">Order Summary</h5>
+        <h5 style="font-weight: bold; margin: 20px 0 10px;">Tóm tắt đơn nhập</h5>
         <table class="table">
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Net Unit Cost</th>
-                    <th>Discount</th>
-                    <th>Subtotal</th>
+                    <th>Tên sách</th>
+                    <th>Số lượng</th>
+                    <th>Giá nhập</th>
+                    <th>Giảm giá</th>
+                    <th>Tạm tính</th>
                 </tr>
             </thead>
             <tbody>
@@ -190,13 +190,13 @@
 
         <table class="summary-table">
             <tr>
-                <td><strong>Total Discount:</strong> ${{ number_format($purchase->discount, 2)  }} </td>
+                <td><strong>Tổng giảm giá:</strong> ${{ number_format($purchase->discount, 2)  }} </td>
             </tr>
             <tr>
-                <td><strong>Shipping Cost:</strong> ${{ number_format($purchase->shipping, 2)  }} </td>
+                <td><strong>Phí vận chuyển:</strong> ${{ number_format($purchase->shipping, 2)  }} </td>
             </tr>
             <tr>
-                <td><strong>Grand Total:</strong> ${{ number_format($purchase->grand_total, 2)  }} </td>
+                <td><strong>Tổng tiền:</strong> ${{ number_format($purchase->grand_total, 2)  }} </td>
             </tr>
         </table>
     </div>

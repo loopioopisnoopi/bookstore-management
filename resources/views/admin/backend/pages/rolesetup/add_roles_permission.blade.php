@@ -15,13 +15,13 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">Role In Permission</h4>
+                <h4 class="fs-18 fw-semibold m-0">Thêm phân quyền</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
                     
-                    <li class="breadcrumb-item active">Role In Permission</li>
+                    <li class="breadcrumb-item active">Thêm phân quyền</li>
                 </ol>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title mb-0">Role In Permission</h5>
+                        <h5 class="card-title mb-0">Thêm phân quyền</h5>
                     </div><!-- end card header -->
 
 <div class="card-body">

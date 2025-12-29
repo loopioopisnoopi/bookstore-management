@@ -8,12 +8,12 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">All Return Purchase</h4>
+                <h4 class="fs-18 fw-semibold m-0">Danh sách phiếu nhập trả</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
-                     <a href="{{ route('add.return.purchase') }}" class="btn btn-secondary">Add Return Purchase</a>
+                     <a href="{{ route('add.return.purchase') }}" class="btn btn-secondary">Tạo phiếu nhập trả</a>
                 </ol>
             </div>
         </div>
@@ -31,13 +31,13 @@
     <table id="datatable" class="table table-bordered dt-responsive table-responsive nowrap">
         <thead>
         <tr>
-            <th>Sl</th>
-            <th>WareHouse</th>
-            <th>Status</th> 
-            <th>Grand Total</th>
-            <th>Payment</th>
-            <th>Created</th> 
-            <th>Action</th>
+            <th>STT</th>
+            <th>Kho</th>
+            <th>Trạng thái</th> 
+            <th>Tổng tiền</th>
+            <th>Thanh toán</th>
+            <th>Ngày tạo</th> 
+            <th>Thao tác</th>
         </tr>
         </thead>
         <tbody>
@@ -47,16 +47,16 @@
         <td>{{ $item['warehouse']['name'] }}</td>
         <td>{{ $item->status }}</td>
         <td>${{ $item->grand_total }}</td> 
-        <td>Cash</td>
+        <td>Tiền mặt</td>
         <td>{{ \Carbon\Carbon::parse($item->created_at)->format('Y-m-d') }}</td>
         <td>
-   <a title="Details" href="{{ route('details.return.purchase',$item->id) }}" class="btn btn-info btn-sm"> <span class="mdi mdi-eye-circle mdi-18px"></span> </a> 
+    <a title="Xem chi tiết" href="{{ route('details.return.purchase',$item->id) }}" class="btn btn-info btn-sm"> <span class="mdi mdi-eye-circle mdi-18px"></span> </a> 
 
-   <a title="PDF Invoice" href="{{ route('invoice.return.purchase',$item->id) }}" class="btn btn-primary btn-sm"> <span class="mdi mdi-download-circle mdi-18px"></span> </a> 
+    <a title="Xuất hóa đơn PDF" href="{{ route('invoice.return.purchase',$item->id) }}" class="btn btn-primary btn-sm"> <span class="mdi mdi-download-circle mdi-18px"></span> </a> 
 
-    <a title="Edit" href="{{ route('edit.return.purchase',$item->id) }}" class="btn btn-success btn-sm"> <span class="mdi mdi-book-edit mdi-18px"></span> </a>  
+     <a title="Chỉnh sửa" href="{{ route('edit.return.purchase',$item->id) }}" class="btn btn-success btn-sm"> <span class="mdi mdi-book-edit mdi-18px"></span> </a>  
 
-    <a title="Delete" href="{{ route('delete.return.purchase',$item->id) }}" class="btn btn-danger btn-sm" id="delete"><span class="mdi mdi-delete-circle  mdi-18px"></span></a>    
+     <a title="Xóa" href="{{ route('delete.return.purchase',$item->id) }}" class="btn btn-danger btn-sm" id="delete"><span class="mdi mdi-delete-circle  mdi-18px"></span></a>    
         </td> 
     </tr>
     @endforeach 

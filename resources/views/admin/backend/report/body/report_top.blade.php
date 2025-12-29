@@ -8,7 +8,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h2 class="fs-16 mb-0 me-2 fw-semibold text-black">Purchase</h2>
+                    <h2 class="fs-16 mb-0 me-2 fw-semibold text-black">Phiếu nhập</h2>
                     <p class="fs-22 mb-0 me-2 fw-semibold text-black">
                         <strong class="text-muted">{{ \App\Models\Purchase::count() }}</strong>
                     </p> 
@@ -27,7 +27,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h2 class="fs-16 mb-0 me-2 fw-semibold text-black">Purchase Return</h2>
+                    <h2 class="fs-16 mb-0 me-2 fw-semibold text-black">Phiếu nhập trả</h2>
                     <p class="fs-22 mb-0 me-2 fw-semibold text-black">
                         <strong class="text-muted">{{ \App\Models\ReturnPurchase::count() }}</strong>
                     </p> 

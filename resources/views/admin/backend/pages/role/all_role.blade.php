@@ -8,12 +8,12 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">All Roles</h4>
+                <h4 class="fs-18 fw-semibold m-0">Danh sách vai trò</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
-                     <a href="{{ route('add.roles') }}" class="btn btn-secondary">Add Roles</a>
+                     <a href="{{ route('add.roles') }}" class="btn btn-secondary">Thêm vai trò</a>
                 </ol>
             </div>
         </div>
@@ -31,9 +31,9 @@
     <table id="datatable" class="table table-bordered dt-responsive table-responsive nowrap">
         <thead>
         <tr>
-            <th>Sl</th>
-            <th>Roles Name</th> 
-            <th>Action</th>
+            <th>STT</th>
+            <th>Tên vai trò</th> 
+            <th>Thao tác</th>
         </tr>
         </thead>
         <tbody>
@@ -42,8 +42,8 @@
                 <td>{{ $key+1 }}</td>
                 <td>{{ $item->name }}</td> 
                 <td>
-            <a href="{{ route('edit.roles',$item->id) }}" class="btn btn-success btn-sm">Edit</a>  
-            <a href="{{ route('delete.roles',$item->id) }}" class="btn btn-danger btn-sm" id="delete">Delete</a>    
+            <a href="{{ route('edit.roles',$item->id) }}" class="btn btn-success btn-sm">Sửa</a>  
+            <a href="{{ route('delete.roles',$item->id) }}" class="btn btn-danger btn-sm" id="delete">Xóa</a>    
                 </td> 
             </tr>
             @endforeach 

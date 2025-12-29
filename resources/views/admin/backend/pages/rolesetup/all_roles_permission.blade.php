@@ -8,12 +8,12 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">All Role in Permission</h4>
+                <h4 class="fs-18 fw-semibold m-0">Danh sách phân quyền</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
-                     <a href="{{ route('add.roles.permission') }}" class="btn btn-secondary">Add Role in Permission</a>
+                     <a href="{{ route('add.roles.permission') }}" class="btn btn-secondary">Thêm phân quyền</a>
                 </ol>
             </div>
         </div>
@@ -31,10 +31,10 @@
     <table class="table table-bordered dt-responsive table-responsive nowrap">
         <thead>
         <tr>
-            <th>Sl</th>
-            <th>Role Name</th>
-            <th>Permission Name </th>  
-            <th>Action</th>
+            <th>STT</th>
+            <th>Tên vai trò</th>
+            <th>Tên quyền </th>  
+            <th>Thao tác</th>
         </tr>
         </thead>
         <tbody>
